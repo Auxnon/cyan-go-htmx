@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <link rel="stylesheet" href="assets/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header><ul id="stock-list"></ul></header>
+      <section>
+        <input
+          type="search"
+          name="key"
+          placeholder="Search..."
+          hx-get="/search"
+          hx-trigger="keyup changed delay:500ms"
+          hx-target="#search-results"
+        />
+        <div id="search-results"></div>
+      </section>
+    </main>
+  </body>
+</html>
