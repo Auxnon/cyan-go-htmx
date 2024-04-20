@@ -9,6 +9,8 @@ import (
 	"strings"
 )
 
+// https://polygon.io/docs/stocks/get_v2_aggs_ticker__stocksticker__prev
+
 //go:embed secret.key
 var API_KEY string
 
